@@ -1,8 +1,11 @@
 ## Overview
-Repository creates for fast running development process with configuration, which are the same from project to project.
+Bot for telegram.
 
 ## Building
-...
+### The project is based on:
+* Java 17
+* Spring Boot 3.1.0(M1)
+* Gradle-Groovy 7.6.1
 
 ## Troubleshooting
 ...
@@ -13,11 +16,6 @@ Can be found in [RELEASE_NOTES](RELEASE_NOTES.md).
 ## Authors
 * Patrick Bateman - [PatBatTB](https://github.com/PatBatTB)
 
-## Acknowledgments
-...
-
-## Contributing
-...
 
 ## Code of Conduct
 Please, follow [Code of Conduct](CODE_OF_CONDUCT.md) page.
