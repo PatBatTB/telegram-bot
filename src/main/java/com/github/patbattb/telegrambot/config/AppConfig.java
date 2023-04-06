@@ -6,6 +6,9 @@ import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
+/**
+ * A class for storing the application beans.
+ */
 @Configuration
 public class AppConfig {
 

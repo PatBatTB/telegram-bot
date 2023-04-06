@@ -1,6 +1,6 @@
 ## Overview
 #### Bot for Telegram.
-* v0.1.0-SNAPSHOT
+* v0.2.0-SNAPSHOT
 
 ## Building
 ### The project is based on:

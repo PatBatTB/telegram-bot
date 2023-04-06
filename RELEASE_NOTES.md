@@ -1,3 +1,8 @@
+## v0.2.0-SNAPSHOT
+* Added the command dispatcher
+* Added stub commands
+* Added the service for sending messages
+
 ## v0.1.0-SNAPSHOT
 * Added Telegram Bot with stub feedback
 
