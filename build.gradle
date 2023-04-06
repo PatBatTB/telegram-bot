@@ -2,10 +2,11 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.1.0-M1'
 	id 'io.spring.dependency-management' version '1.1.0'
+	id 'jacoco'
 }
 
 group = 'com.github.patbattb'
-version = '0.1.0-SNAPSHOT'
+version = '0.2.0-SNAPSHOT'
 sourceCompatibility = '17'
 
 
@@ -18,12 +19,22 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.telegram:telegrambotsextensions:6.5.0'
+	implementation 'com.google.guava:guava:31.1-jre'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.assertj:assertj-core:3.23.1'
+	testImplementation 'com.approvaltests:approvaltests:18.5.0'
+	testImplementation 'org.assertj:assertj-core:3.24.2'
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+	testImplementation 'org.mockito:mockito-core:5.2.0'
+	testImplementation 'org.mockito:mockito-junit-jupiter:5.2.0'
+
 }
 
+jar {
+	enabled = false
+}
 
-tasks.named('test') {
+test {
 	useJUnitPlatform()
+	finalizedBy jacocoTestReport //jacoco report will be always generated after 'check' and 'test' tasks
 }
