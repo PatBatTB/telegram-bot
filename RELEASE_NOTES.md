@@ -1,3 +1,6 @@
+## v0.3.0-SNAPSHOT
+* Added logging with Lombok
+
 ## v0.2.0-SNAPSHOT
 * Added the command dispatcher
 * Added stub commands
