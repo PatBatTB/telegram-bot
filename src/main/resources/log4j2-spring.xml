@@ -35,7 +35,7 @@
             <AppenderRef ref="RollingFile" />
         </Root>
 
-        <Logger name="com.github.patbattb.telegrambot.domain.TelegramBot" level="trace" additivity="false">
+        <Logger name="com.github.patbattb.telegrambot.components.TelegramBot" level="trace" additivity="false">
             <AppenderRef ref="RollingFile" />
         </Logger>
 
