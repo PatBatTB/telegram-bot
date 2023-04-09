@@ -1,3 +1,9 @@
+## 0.4.0-SNAPSHOT
+* Refactoring logic of receiving and sending messages.
+* Added BotMenu.
+* Added BotConfig with bot's username and token.
+
+
 ## v0.3.0-SNAPSHOT
 * Added logging with Lombok
 
