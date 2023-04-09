@@ -1,4 +1,5 @@
 HELP.md
+myBotStart.sh
 .gradle
 *.properties
 build/
