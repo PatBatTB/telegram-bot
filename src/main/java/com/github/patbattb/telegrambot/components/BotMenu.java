@@ -20,13 +20,6 @@ public class BotMenu {
             tempList.add(new BotCommand(command.getName(), command.getDescription()));
         }
         listOfCommands = ImmutableList.copyOf(tempList);
-
-//        listOfCommands = ImmutableList.<BotCommand>builder()
-//                .add(new BotCommand("/start", "Start command"))
-//                .add(new BotCommand("/info", "Info command"))
-//                .add(new BotCommand("/stop", "Stop command"))
-//                .add(new BotCommand("/help", "Help command"))
-//        .build();
     }
 
     public ImmutableList<BotCommand> getListOfCommands() {

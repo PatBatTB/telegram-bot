@@ -6,7 +6,6 @@ import com.google.common.collect.ImmutableMap;
 /**
  * Service for handling bot commands
  */
-
 public class CommandMap {
 
     private final ImmutableMap<String, Command> map;

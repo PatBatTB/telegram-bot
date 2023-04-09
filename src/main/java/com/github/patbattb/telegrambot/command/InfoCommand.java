@@ -9,7 +9,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 public class InfoCommand implements Command {
 
     private final SendMessageBotService sendMessageBotService;
-    private static final String MESSAGE = "Info message";
+    public static final String MESSAGE = "Info message";
 
     public InfoCommand(SendMessageBotService sendMessageBotService) {
         this.sendMessageBotService = sendMessageBotService;
