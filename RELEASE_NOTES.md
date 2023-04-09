@@ -1,3 +1,6 @@
+## 0.5.0-SNAPSHOT
+* Added docker deployment
+
 ## 0.4.0-SNAPSHOT
 * Refactoring logic of receiving and sending messages.
 * Added BotMenu.

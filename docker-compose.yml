@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  telegram-bot:
+    image: patbat-tb-telegram-bot:lts
+    container_name: patbat-tb-telegram-bot
+    volumes:
+      - type: bind
+        source: ${LOG_PATH}
+        target: /log
+    build: .
+    env_file:
+      - ./env/dc.env
+    restart: always

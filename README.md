@@ -1,39 +1,36 @@
 ## Overview
 #### Bot for Telegram.
-* 0.4.0-SNAPSHOT
+* 0.5.0-SNAPSHOT
 
 ## Building
 ### The project is based on:
 * Java 17
 * Spring Boot 3.1.0(M1)
 * Gradle-Groovy 7.6.1
+* Docker
+* Docker compose
 
-
-* Logs are saved in `/var/log/java/telegrambot`
 
 ## Usage
 
 Contact [BotFather](https://t.me/BotFather) to register your bot and obtain an access token.
 
-Record the bot's username and token in variables in the `src/main/resources/application.properties` file.
+Install [Docker](https://www.docker.com/).
 
-    bot.username = your_bot_username
-    bot.token = your_access_token
+Write the bot credentials into the `start.sh` file.
 
-Build the project with Gradle.
-```Bash
-./gradlew clean build
+```bash
+export BOT_USERNAME=your_bot_username
+export BOT_TOKEN=your_bot_token
+export LOG_PATH=absolute_path_to_the_logs_folder
 ```
-Grab the finished Jar archive from `build/libs`
+
+To launch the bot, run the `start.sh` file via bash.
+
+To stop the bot, run the `stop.sh` file.
 
 ## Troubleshooting
-The folder with application logs should be created by the same user who runs the bot application.
-If the current user does not have access rights, use:
 
-```Bash
-$ sudo mkdir -p /var/log/java/telegrambot
-$ sudo chown 'your_username':'your_username' /var/log/java/telegrambot
-```
 
 ## Release Notes
 Can be found in [RELEASE_NOTES](RELEASE_NOTES.md).

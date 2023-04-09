@@ -2,7 +2,7 @@
 <Configuration monitorInterval="60">
 
     <Properties>
-        <Property name="log-path">/var/log/java/telegrambot</Property>
+        <Property name="log-path">./log</Property>
     </Properties>
 
     <Appenders>
