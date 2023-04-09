@@ -5,17 +5,23 @@ package com.github.patbattb.telegrambot.command;
  */
 public enum CommandName {
 
-    START("/start"),
-    STOP("/stop"),
-    HELP("/help");
+    START("/start", "Start command"),
+    STOP("/stop", "Stop command" ),
+    INFO("/info", "Info command"),
+    HELP("/help", "Help command");
 
     private final String name;
+    private final String description;
 
-    CommandName(String name) {
+    CommandName(String name, String description) {
         this.name = name;
+        this.description = description;
     }
 
     public String getName() {
         return name;
+    }
+    public String getDescription() {
+        return description;
     }
 }

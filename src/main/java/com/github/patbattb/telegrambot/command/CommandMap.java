@@ -15,6 +15,7 @@ public class CommandMap {
         map = ImmutableMap.<String, Command>builder()
                 .put(CommandName.START.getName(), new StartCommand(sendMessageBotService))
                 .put(CommandName.STOP.getName(), new StopCommand(sendMessageBotService))
+                .put(CommandName.INFO.getName(), new InfoCommand(sendMessageBotService))
                 .put(CommandName.HELP.getName(), new HelpCommand(sendMessageBotService))
                 .build();
         unknownCommand = new UnknownCommand(sendMessageBotService);

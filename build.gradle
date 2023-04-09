@@ -29,7 +29,6 @@ dependencies {
 
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'com.approvaltests:approvaltests:18.5.0'
 	testImplementation 'org.assertj:assertj-core:3.24.2'
 	testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
 	testImplementation 'org.mockito:mockito-core:5.2.0'
